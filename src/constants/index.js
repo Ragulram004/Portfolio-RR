@@ -1,4 +1,9 @@
 import {
+  mongo,
+  node,
+  react,
+  express,
+
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
@@ -59,7 +64,8 @@ export const navigation = [
   }
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+
+export const heroIcons = [mongo, express,react, node,];
 
 export const notificationImages = [notification4, notification3, notification2];
 
