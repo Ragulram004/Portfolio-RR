@@ -3,7 +3,7 @@ import Section from "./Section";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient , LogoParallax } from "./design/Hero";
-import {heroIcons} from "../constants"
+import {heroIcons,socials} from "../constants"
 import { ScrollParallax } from "react-just-parallax";
 
 const Hero = () => {
@@ -67,6 +67,23 @@ const Hero = () => {
                       ))}
                     </ul>
                 </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="hidden absolute -right-[5.5rem] bottom-[11rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                    {socials.map(({ iconUrl, id, title,url }) => (
+                      <li className="p-5" key={id}>
+                        <a href={url} target="_blank" className="cursor-pointer">
+                          <img 
+                            src={iconUrl}
+                            width={24}
+                            height={25} 
+                            alt={title} 
+                          />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollParallax>
+
               </div>
             </div>
             <Gradient/>

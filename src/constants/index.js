@@ -36,9 +36,10 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
+  github,
   twitter,
   yourlogo,
+  linkedin,
 } from "../assets";
 
 export const navigation = [
@@ -291,32 +292,27 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Github",
+    iconUrl: github,
+    url: "https://github.com/Ragulram004",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "LinkedIn",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/ragulram-b-455387253/",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/ragulram_004/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "https://x.com/_Ragulram_",
+  }
+  
 ];
