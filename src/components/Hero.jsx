@@ -2,13 +2,17 @@ import { useRef } from "react";
 import Section from "./Section";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
-import { BackgroundCircles, BottomLine, Gradient , LogoParallax } from "./design/Hero";
-import {heroIcons,socials} from "../constants"
+import {
+  BackgroundCircles,
+  Gradient,
+  LogoParallax,
+} from "./design/Hero";
+import { heroIcons, socials } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
+
 
 const Hero = () => {
   const parallaxRef = useRef(null);
-
 
   return (
     <Section
@@ -40,67 +44,78 @@ const Hero = () => {
           <Button white href={"#"}>
             Resume
           </Button>
+          <ScrollParallax>
+            <ul className=" lg:hidden flex justify-center items-center mt-8  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl ">
+              {socials.map(({ iconUrl, id, title, url }) => (
+                <li className="p-5" key={id}>
+                  <a href={url} target="_blank" className="cursor-pointer">
+                    <img src={iconUrl} width={24} height={25} alt={title} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </ScrollParallax>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
-                  width={1440}
-                  height={1800}
-                  alt="hero"
+                  width={1024}
+                  height={490}
+                  alt="AI"
                 />
+
                 <ScrollParallax isAbsolutelyPositioned>
-                    <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                      {heroIcons.map((icon, index)=>(
-                        <li className="p-5" key = {index}>
-                          <img 
-                            src={icon}
-                            width={24}
-                            height={25} 
-                            alt={icon} 
-                          />
-                        </li>
-                      ))}
-                    </ul>
+                  <ul className="hidden absolute -left-[5.5rem] bottom-[8.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
+                    {heroIcons.map((icon, index) => (
+                      <li className="p-5" key={index}>
+                        <img src={icon} width={24} height={25} alt={icon} />
+                      </li>
+                    ))}
+                  </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -right-[5.5rem] bottom-[11rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                    {socials.map(({ iconUrl, id, title,url }) => (
+                  <ul className="hidden absolute -right-[5.5rem] bottom-[13.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
+                    {socials.map(({ iconUrl, id, title, url }) => (
                       <li className="p-5" key={id}>
-                        <a href={url} target="_blank" className="cursor-pointer">
-                          <img 
+                        <a
+                          href={url}
+                          target="_blank"
+                          className="cursor-pointer"
+                        >
+                          <img
                             src={iconUrl}
                             width={24}
-                            height={25} 
-                            alt={title} 
+                            height={25}
+                            alt={title}
                           />
                         </a>
                       </li>
                     ))}
                   </ul>
                 </ScrollParallax>
-
               </div>
             </div>
-            <Gradient/>
+            <Gradient />
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[235%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-            <img 
-              src={heroBackground} 
-              className="w-full" 
+            <img
+              src={heroBackground}
+              className="w-full"
               width={1440}
               height={1800}
-              alt="hero" 
+              alt="hero"
             />
           </div>
-          <BackgroundCircles/>
-          <LogoParallax/>
-        </div>
-      </div>
+          <BackgroundCircles />
+          <LogoParallax />
+        </div>        
+      </div>          
     </Section>
   );
 };
