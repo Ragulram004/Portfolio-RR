@@ -83,11 +83,20 @@ import twitter from "./socials/twitter.svg";
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 
+import backend from "./backend.svg";
+import frontend from "./frontend.svg";
+import uiux from "./uiux.svg";
+import mern from "./mern.svg";
+
 export {
   mongo,
   express,
   react,
   node,
+  backend,
+  frontend,
+  uiux,
+  mern,
 
   brainwave,
   check,

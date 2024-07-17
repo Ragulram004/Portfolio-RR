@@ -3,6 +3,10 @@ import {
   node,
   react,
   express,
+  backend,
+  frontend,
+  uiux,
+  mern,
 
   benefitIcon1,
   benefitIcon2,
@@ -315,4 +319,23 @@ export const socials = [
     url: "https://x.com/_Ragulram_",
   }
   
+];
+
+export const services = [
+  {
+    title: "MERN Stack Developer",
+    icon: mern,
+  },
+  {
+    title: "Frontend Developer",
+    icon: frontend,
+  },
+  {
+    title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "UI/UX Designer",
+    icon: uiux,
+  },
 ];
