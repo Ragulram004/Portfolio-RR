@@ -15,7 +15,7 @@ const ServiceCard =({index,title,icon})=>{
             alt="" 
           />
           <h3 
-            className="text-n-2 text-[20px] font-bold text-center "
+            className="text-n-2 text-[17px] font-bold text-center "
           >{title}</h3>
         </div>
        </div>
