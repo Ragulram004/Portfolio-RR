@@ -36,7 +36,7 @@ const About = () => {
     >
       <div className="relative z-10 mt-20 lg:block">
         <h5 className="tagline mb-6 text-center text-n-1/50">
-          Hey! Welcome To My Portfolio
+          GET TO KNOW ME
         </h5>
       </div>
       <div className="container relative z-2">

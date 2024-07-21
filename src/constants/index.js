@@ -8,6 +8,17 @@ import {
   uiux,
   mern,
 
+  expresslogo,
+  gitlogo,
+  htmllogo,
+  mongologo,
+  nodelogo,
+  reactlogo,
+  tailwindlogo,
+  javascriptlogo,
+  figmalogo,
+  csslogo,
+
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
@@ -127,79 +138,93 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  " As a frontend developer, I’m grateful for the opportunity to directly enhance user experiences through my work.";
+export const collabText2 =
+  " I'm grateful for the chance to create the solid infrastructure that ensures smooth and efficient user interactions.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Frontend Developer",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Backend Developer",
+    text: collabText2
   },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
+  
 ];
 
 export const collabApps = [
   {
     id: "0",
     title: "Figma",
-    icon: figma,
-    width: 26,
+    icon: figmalogo,
+    width: 20,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "ReactJS",
+    icon: reactlogo,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "ExpressJS",
+    icon: expresslogo,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "HTML",
+    icon: htmllogo,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "Javascript",
+    icon: javascriptlogo,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "MongoDB",
+    icon: mongologo,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
+    title: "Tailwind",
+    icon: tailwindlogo,
+    width: 34,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
+    title: "NodeJS",
+    icon: nodelogo,
+    width: 30,
+    height: 32,
+  },
+  {
+    id:"8",
+    title :"CSS",
+    icon: csslogo,
+    width: 30,
+    height: 34,
+  },
+  {
+    id: "9",
+    title: "Git",
+    icon: gitlogo,
+    width: 30,
     height: 32,
   },
 ];

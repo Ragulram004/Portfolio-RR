@@ -22,6 +22,11 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
+      <div className="relative z-10  lg:block">
+        <h5 className="tagline mb-6 text-center text-n-1/50">
+          Hey! Welcome To My Portfolio
+        </h5>
+      </div>
       <div className="container relative">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] ">
           <h1 className="h1 mb-6">
@@ -45,7 +50,7 @@ const Hero = () => {
             Resume
           </Button>
           <ScrollParallax>
-            <ul className=" lg:hidden flex justify-center items-center mt-8  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl ">
+            <ul className=" lg:hidden flex justify-center items-center mt-15  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl ">
               {socials.map(({ iconUrl, id, title, url }) => (
                 <li className="p-5" key={id}>
                   <a href={url} target="_blank" className="cursor-pointer">

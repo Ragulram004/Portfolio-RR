@@ -76,7 +76,7 @@ export default {
       backgroundImage: {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
-          "conic-gradient(from 225deg, #F0DB4F, #5ED5F6, #F0DB4F, #5ED5F6, #F0DB4F)",
+          "conic-gradient(from 225deg, #F0DB4F, #00D8FF, #F0DB4F, #00D8FF, #F0DB4F)",
         "benefit-card-1": "url(assets/benefits/card-1.svg)",
         "benefit-card-2": "url(assets/benefits/card-2.svg)",
         "benefit-card-3": "url(assets/benefits/card-3.svg)",

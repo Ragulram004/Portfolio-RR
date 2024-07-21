@@ -17,13 +17,18 @@ import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
 const Projects = () => {
   return (
     <Section 
-      className={`pt-[4rem]  mb-[10rem] `}
+      className={`pt-[4rem] `}
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="projects"
     >
-      <div className="container lg:mt-[12rem]  xl:mt-[12rem] z-2">
+      <div className="relative z-10 lg:mt-20 xl:mt-20 mb-20 lg:mb-0 xl:mb-0 lg:block">
+        <h5 className="tagline mb-6 text-center text-n-1/50">
+        PROJECT GALLERY
+        </h5>
+      </div>
+      <div className="container lg:mt-[10rem]  xl:mt-[7rem] z-2">
         <div>
           <Heading className={"absolute max-x-md -mt-[1.70rem] lg:-mt-[2.25rem] xl:-mt-[2.25rem] lg:max-w-2xl"} title="PROJECTS" />
         </div>
@@ -50,7 +55,7 @@ const Projects = () => {
                 "--swiper-pagination-bullet-horizontal-gap": "2px"
             }}
             modules={[FreeMode, Pagination , Mousewheel]}
-            className="max-w-[100%] lg:max-w-[100%]"
+            className="max-w-[100%] lg:max-w-[90%]"
           >
             {benefits.map((item) => (
               <SwiperSlide key={item.id}>
@@ -62,7 +67,7 @@ const Projects = () => {
                   key={item.id}
                 >
                   <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none  ">
-                    <h5 className="h2 mb-5">{item.title}</h5>
+                    <h5 className="h5 mb-5">{item.title}</h5>
                     <p className="body-2 mb-6 text-n-3">{item.text}</p>
                     <div className="flex items-center mt-auto">
                       <img 

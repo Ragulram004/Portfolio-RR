@@ -1,4 +1,4 @@
-import brainwave from "./brainwave.svg";
+import rrlogo from "./RRlogo.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -41,6 +41,17 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+
+import expresslogo from "./collaboration/express.png";
+import gitlogo from "./collaboration/git.png";
+import htmllogo from "./collaboration/html.png";
+import mongologo from "./collaboration/mongo.png";
+import nodelogo from "./collaboration/node.png";
+import reactlogo from "./collaboration/react.png";
+import tailwindlogo from "./collaboration/tailwind.png";
+import javascriptlogo from "./collaboration/javascript.png";
+import figmalogo from "./collaboration/figma.png";
+import csslogo from "./collaboration/css.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -98,7 +109,18 @@ export {
   uiux,
   mern,
 
-  brainwave,
+  expresslogo,
+  gitlogo,
+  htmllogo,
+  mongologo,
+  nodelogo,
+  reactlogo,
+  tailwindlogo,
+  javascriptlogo,
+  figmalogo,
+  csslogo,
+
+  rrlogo,
   check,
   check2,
   loading1,
