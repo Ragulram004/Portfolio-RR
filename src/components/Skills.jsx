@@ -5,6 +5,7 @@ import { rrlogo, check } from "../assets";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from "../utils/motion";
+import Heading from './Heading';
 
 const Skills = () => {
   const [isInView, setIsInView] = useState(false);
@@ -46,9 +47,7 @@ const Skills = () => {
         <div className='container lg:flex mt-[5rem]'>
           <div className='max-w-[25rem]'>
             <motion.div variants={textVariant()} initial="hidden" animate={isInView ? "show" : "hidden"}>
-              <h2 className='h1 mb-4 md:mb-8'>
-                SKILLS
-              </h2>
+              <Heading className={'h1 mb-4 md:mb-8'} title={"SKILLS"}/>
             </motion.div>
             <ul className='max-w-[22rem] mb-10 md:mb-14'>
               {collabContent.map((item) => (
@@ -68,55 +67,56 @@ const Skills = () => {
               ))}
             </ul>
           </div>
-          <div className='lg:ml-auto xl:w-[38rem] mt-4'>
-
-            <motion.div 
-            variants={fadeIn("left", "spring")}
+          <motion.div
+            variants={fadeIn("right", "spring")}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
-            className='relative left-1/4 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100'>
-              <div className='flex w-60 aspect-square m-auto border border-n-6 rounded-full'>
-                <div className='w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full'>
-                  <div className='flex items-center justify-center w-full h-full bg-n-8 rounded-full'>
-                    <img
-                      className='rounded-md'
-                      src={rrlogo}
-                      width={48}
-                      height={48}
-                      alt="RR"
-                    />
-                  </div>
-                </div>
-              </div>
-              <ul>
-                {collabApps.map((app, index) => (
-                  <motion.li
-                    key={app.id}
-                    className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}
-                    animate={{ rotate: 360}}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 15,
-                      ease: 'linear',
-                      delay: index * 1.5 // Staggered animation for each icon
-                    }}
-                  >
-                    <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border-n-1/15 rounded-xl`}>
+          >
+            <div className='lg:ml-auto xl:w-[38rem] mt-4'>
+              <div className='relative left-1/2 xl:left-full flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100'>
+                <div className='flex w-60 aspect-square m-auto border border-n-6 rounded-full'>
+                  <div className='w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full'>
+                    <div className='flex items-center justify-center w-full h-full bg-n-8 rounded-full'>
                       <img
-                        src={app.icon}
-                        width={app.width}
-                        height={app.height}
-                        className='m-auto'
-                        alt={app.title}
+                        className='rounded-md'
+                        src={rrlogo}
+                        width={48}
+                        height={48}
+                        alt="RR"
                       />
                     </div>
-                  </motion.li>
-                ))}
-              </ul>
-              <LeftCurve />
-              <RightCurve />
-            </motion.div>
-          </div>
+                  </div>
+                </div>
+                <ul>
+                  {collabApps.map((app, index) => (
+                    <motion.li
+                      key={app.id}
+                      className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}
+                      animate={{ rotate:360 }}
+                      transition={{
+                        repeat: Infinity,
+                        duration: 15,
+                        ease: 'linear',
+                        delay: index * 1.5 // Staggered animation for each icon
+                      }}
+                    >
+                      <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border-n-1/15 rounded-xl`}>
+                        <img
+                          src={app.icon}
+                          width={app.width}
+                          height={app.height}
+                          className='m-auto'
+                          alt={app.title}
+                        />
+                      </div>
+                    </motion.li>
+                  ))}
+                </ul>
+                <LeftCurve />
+                <RightCurve />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </Section>
