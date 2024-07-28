@@ -71,7 +71,7 @@ const About = () => {
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
           >
-            <div className="relative z-2 px-7 pt-7 backdrop-blur-[2px]">
+            <div className="relative z-2 px-7 pt-7 backdrop-blur-[2px] xl:backdrop-blur-[3px]">
               <p className="body-1 text-n-2">
                 I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js.
                 <br /><br />

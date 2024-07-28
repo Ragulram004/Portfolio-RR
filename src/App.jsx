@@ -6,6 +6,8 @@ import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
+import Bgcanva from "./components/Bgcanva.jsx";
+
 const App = () => {
   return (
     <>
@@ -17,7 +19,8 @@ const App = () => {
         <Projects/>
         <Skills/>
         <div className="relative z-0">
-        <Contact/>
+          <Contact/> 
+          <Bgcanva/>
         </div>
       </div>
       <ButtonGradient />
