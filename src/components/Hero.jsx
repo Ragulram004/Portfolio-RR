@@ -20,7 +20,7 @@ const Hero = () => {
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
-      id="hero"
+      id="home"
     >
       <div className="relative z-10  lg:block">
         <h5 className="tagline mb-6 text-center text-n-1/50">

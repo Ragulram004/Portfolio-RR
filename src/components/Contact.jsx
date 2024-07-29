@@ -4,8 +4,7 @@ import emailjs from '@emailjs/browser';
 import { slideIn } from "../utils/motion";
 import Section from "./Section";
 import Heading from "./Heading";
-import Bgcanva from "./Bgcanva";
-
+  
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,10 +16,37 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
-    
+    const {name,value} = e.target;
+
+    setForm({...form,[name]:value})
   }
   const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
 
+    emailjs.send('service_ux6pr78', 'template_lcdwsmq', 
+       {
+         from_name: form.name,
+         to_name: 'Ragulram',
+         from_email: form.email,
+         to_email: 'ragulram0427@gmail.com',
+         message: form.message
+       },
+       'D7g4pcZUNWKlYKbr1'
+    )
+    .then(()=>{
+      setLoading(false)
+      alert('Thank you. I will get back to you as soon as possible.')
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      })
+    },(error)=>{
+      setLoading(false)
+      console.log(error)
+      alert('someting went wrong')
+    })
   }
 
   return (
@@ -45,8 +71,9 @@ const Contact = () => {
         flex-[0.75] bg-black-100 -mt-[3.5rem] md:-mt-[4rem] lg:-mt-[4.5rem]  xl:-mt-[4.7rem] xl:w-1/2 md:w-[74%] lg:w-[57%] mx-auto backdrop-blur-[2px] xl:backdrop-blur-[3px]
         `}
       >
-          
+           
             <form
+              required
               ref={formRef}
               onSubmit={handleSubmit}
               className=' flex flex-col gap-8 border border-white p-5'
