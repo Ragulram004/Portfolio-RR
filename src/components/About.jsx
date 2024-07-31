@@ -73,9 +73,11 @@ const About = () => {
           >
             <div className="relative z-2 px-7 pt-7 backdrop-blur-[2px] xl:backdrop-blur-[3px]">
               <p className="body-1 text-n-2">
-                I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js.
+              Hello! I'm a web developer with a strong foundation in JavaScript and extensive expertise in popular frameworks like Node.js, React, and Express. 
+              <br/> <br />
+              My technical skills are complemented by a keen eye for design, thanks to my proficiency in Figma, which allows me to craft intuitive and visually appealing user interfaces.
                 <br /><br />
-                I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+                As a quick learner, I am always eager to embrace new challenges and technologies.  I am always on the lookout for opportunities to expand my knowledge and stay updated with the latest industry trends.
               </p>
             </div>
           </motion.div>

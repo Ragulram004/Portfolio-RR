@@ -5,20 +5,31 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [positions] = useState(() => {
+    const pos = new Float32Array(5000 * 3);
+    for (let i = 0; i < 5000; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 2.4; // X position
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 2.4; // Y position
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 2.4; // Z position
+    }
+    return pos;
+  });
 
-  useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+  useFrame((state) => {
+    const time = state.clock.getElapsedTime();
+    for (let i = 0; i < 5000; i++) {
+      positions[i * 3 + 1] = Math.sin(time + positions[i * 3]) * 0.5; // Y position follows a sine wave based on X position
+    }
+    ref.current.geometry.attributes.position.needsUpdate = true;
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+    <group>
+      <Points ref={ref} positions={positions} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
           color='#f272c8'
-          size={0.002}
+          size={0.0036}
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -26,6 +37,7 @@ const Stars = (props) => {
     </group>
   );
 };
+
 
 const Bgcanva = () => {
   return (

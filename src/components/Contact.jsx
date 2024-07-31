@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { slideIn } from "../utils/motion";
 import Section from "./Section";
 import Heading from "./Heading";
+import { socials } from "../constants";
   
 
 const Contact = () => {
@@ -36,7 +37,7 @@ const Contact = () => {
     )
     .then(()=>{
       setLoading(false)
-      alert('Thank you. I will get back to you as soon as possible.')
+      alert('Thanks for your time. I’ll catch up with you soon.')
       setForm({
         name: '',
         email: '',
@@ -45,13 +46,13 @@ const Contact = () => {
     },(error)=>{
       setLoading(false)
       console.log(error)
-      alert('someting went wrong')
+      alert('Oops, something didn’t work as expected.')
     })
   }
 
   return (
     <Section
-      className={`pt-[4rem]`}
+      className={`pt-[4rem] pb-[2rem] `}
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -73,7 +74,7 @@ const Contact = () => {
       >
            
             <form
-              required
+              autocomplete="off"
               ref={formRef}
               onSubmit={handleSubmit}
               className=' flex flex-col gap-8 border border-white p-5'
@@ -81,46 +82,73 @@ const Contact = () => {
               <label className='flex flex-col'>
                 <span className='body-2 mb-2'>Name</span>
                 <input
+                  required
                   type='text'
                   name='name'
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className='bg-n-6 py-4 px-6 placeholder:text-n-4 body-2 rounded-lg outline-none border-none font-medium'
+                  className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-1 font-medium'
                 />
               </label>
               <label className='flex flex-col'>
                 <span className='body-2 mb-2'>Email-ID</span>
                 <input
+                  required
                   type='email'
                   name='email'
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className='bg-n-6 py-4 px-6 placeholder:text-n-4 body-2 rounded-lg outline-none border-none font-medium'
+                  className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-1 font-medium'
                 />
               </label>
               <label className='flex flex-col'>
                 <span className='body-2 mb-2'>Message</span>
                 <textarea
-                  rows={5}
+                  required
+                  rows={3}
                   name='message'
                   value={form.message}
                   onChange={handleChange}
                   placeholder='What you want to say?'
-                  className='bg-n-6 py-4 px-6 placeholder:text-n-4 body-2 rounded-lg outline-none border-none font-medium'
+                  className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-1 font-medium'
                 />
               </label>
 
               <button
                 type='submit'
-                className='bg-n-6 py-3 px-8 rounded-xl outline-none w-fit text-n-1 font-bold shadow-md shadow-primary mx-auto'
+                className=' body-2 bg-color-1 py-3 px-8 rounded-xl outline-none w-fit text-n-7 font-bold shadow-md shadow-primary mx-auto'
               >
                 {loading ? "Sending..." : "Send"}
               </button>
             </form>
-      </div>   
-   
+      </div>
+      <div className="xl:absolute lg:absolute md:absolute bottom-[10rem] xl:left-2 lg:left-0 md:-left-3 z-1 ">
+          <ul className="flex justify-center mt-[5rem] md:flex-col lg:flex-col xl:flex-col ">
+            {socials.map(({ iconUrl, id, title, url }) => (
+              <li className="p-5" key={id}>
+                <a
+                  href={url}
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <img
+                    src={iconUrl}
+                    width={24}
+                    height={25}
+                    alt={title}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+      </div>
+      <div className="relative z-10 md:mt-20 lg:mt-20 xl:mt-20  lg:block">
+        <h5 className="mb-6 text-center text-n-1/50">
+          Copyright &copy; {new Date().getFullYear()}
+        </h5>
+      </div>
     </Section>
   )
 }

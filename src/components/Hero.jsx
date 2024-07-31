@@ -42,11 +42,7 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            A self-motivated and disciplined, thriving on adaptability and
-            continuous growth, both for myself and those around me.
-          </p>
-          <Button white href={"#"}>
+          <Button white  href={"#"}>
             Resume
           </Button>
           <ScrollParallax>
