@@ -66,8 +66,8 @@ const About = () => {
         </div>
         <div className="xl:flex gap-[5rem] max-w-[70rem] mx-auto">
           <motion.div
-            className="md:max-w-[39rem] lg:max-w-[50rem] xl:max-w-[35rem] mt-[3.2rem] xl:mt-[2rem] md:ml-[4.5rem] lg:ml-[6.5rem] xl:-ml-[1rem] pb-7 border border-white"
-            variants={fadeIn("left", "spring", 0.3, 0.75)}
+            className="md:max-w-[39rem] lg:max-w-[50rem] xl:max-w-[35rem] mt-[3.2rem] xl:mt-[2rem] md:ml-[4.5rem] lg:ml-[6.5rem] xl:-ml-[1rem] pb-7 rounded-sm  border-2 border-white"
+            variants={fadeIn("up", "spring", 0.3, 0.75)}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
           >

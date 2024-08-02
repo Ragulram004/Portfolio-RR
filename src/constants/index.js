@@ -191,8 +191,8 @@ export const benefits = [
     text: "Progress Pulse, a comprehensive platform that allows users to effectively maintain, track, and visualize their progress over time, utilizing #React #CSS #MongoDB #Express.js.",
     backgroundUrl: "src/assets/benefits/card-5.svg",
     iconUrl: github,
-    // url: "https://github.com",
-    // url2: "https://github.com",
+    url: "https://github.com/Ragulram004/Progress_Pulse.git",
+    url2: "https://github.com/Ragulram004/Progress_Pulse.git",
 
   },
   {

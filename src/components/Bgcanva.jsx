@@ -8,9 +8,9 @@ const Stars = (props) => {
   const [positions] = useState(() => {
     const pos = new Float32Array(5000 * 3);
     for (let i = 0; i < 5000; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 2.4; // X position
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 2.4; // Y position
-      pos[i * 3 + 2] = (Math.random() - 0.5) * 2.4; // Z position
+      pos[i * 3] = (Math.random() - 0.5) * 2.4; 
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 2.4;
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 2.4;
     }
     return pos;
   });
