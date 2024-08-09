@@ -23,6 +23,12 @@ import {
   github,
   twitter,
   linkedin,
+
+  invoice,
+  progresspulse,
+  rolex,
+  school,
+
 } from "../assets";
 
 export const navigation = [
@@ -151,6 +157,7 @@ export const benefits = [
     text: "A robust school website, significantly enhancing its overall functionality and providing an improved user experience.  #HTML #Bootstrap",
     backgroundUrl: "src/assets/benefits/card-1.svg",
     iconUrl: github,
+    img : school,
     url: "https://github.com/Ragulram004/School_Website.git",
     url2: "https://ragulram004.github.io/School_Website/index.html",
   },
@@ -161,12 +168,13 @@ export const benefits = [
     backgroundUrl: "src/assets/benefits/card-2.svg",
     iconUrl: github,
     light: true,
+    img:rolex,
     url: "https://github.com/Ragulram004/Rolex_Landingpage_Tailwindcss.git",
     url2: "https://ragulram004.github.io/Rolex_Landingpage_Tailwindcss/",
   },
   {
     id: "2",
-    title: "Face Recognition",
+    title: "Dayscholar Recognition",
     text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
     backgroundUrl: "src/assets/benefits/card-4.svg",
     iconUrl: github,
@@ -181,8 +189,9 @@ export const benefits = [
     backgroundUrl: "src/assets/benefits/card-3.svg",
     iconUrl: github,
     light: true,
-    // url: "https://github.com/Ragulram004/invoice_portal.git",
-    // url2: "https://github.com/Ragulram004/invoice_portal.git",
+    img: invoice,
+    url: "https://github.com/Ragulram004/invoice_portal.git",
+    url2: "https://invoice-portal-frontend.vercel.app",
 
   },
   {
@@ -191,6 +200,7 @@ export const benefits = [
     text: "Progress Pulse, a comprehensive platform that allows users to effectively maintain, track, and visualize their progress over time, utilizing #React #CSS #MongoDB #Express.js.",
     backgroundUrl: "src/assets/benefits/card-5.svg",
     iconUrl: github,
+    img: progresspulse,
     url: "https://github.com/Ragulram004/Progress_Pulse.git",
     url2: "https://github.com/Ragulram004/Progress_Pulse.git",
 

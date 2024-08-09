@@ -12,12 +12,53 @@ import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 
 import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
-import { motion } from "framer-motion";
+import { motion, useSpring } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const Projects = () => {
+
+  const [img, setImg] = useState({
+    src: "",
+    alt: "",
+    opacity: 0,
+    x: 0,
+    y: 0,
+  });
+
   const [isInView, setIsInView] = useState(false);
   const ref = useRef(null);
+
+  const spring = {
+    stiffness: 150,
+    damping: 15,
+    mass: 0.1,
+  };
+
+  const imagePos = {
+    x: useSpring(0, spring),
+    y: useSpring(0, spring),
+  };
+
+  const handleMove = (e) => {
+    const { clientX, clientY } = e;
+    imagePos.x.set(clientX + 10);
+    imagePos.y.set(clientY + 10);
+  };
+
+  const handleMouseEnter = (item) => {
+    setImg({
+      src: item.img,
+      alt: item.label,
+      opacity: 1,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setImg((prevImg) => ({
+      ...prevImg,
+      opacity: 0,
+    }));
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -57,6 +98,7 @@ const Projects = () => {
           </motion.div>
           <div className="flex items-center justify-center flex-col">
             <Swiper
+              onMouseMove={handleMove}
               breakpoints={{
                 435: {
                   slidesPerView: 2,
@@ -90,12 +132,15 @@ const Projects = () => {
                       backgroundImage: `url(${item.backgroundUrl})`,
                       backdropFilter: 'blur(3px)'
                     }}
+                    onMouseEnter={() => handleMouseEnter(item)}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseMove={handleMove}
                   >
-                    <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem] ">
+                    <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem]">
                       <h5 className="h5 mb-5">{item.title}</h5>
                       <p className="body-2 mb-6 text-n-3">{item.text}</p>
                       <div className="flex items-center mt-auto">
-                        <a href={item.url} target='_blank' className="cursor-pointer">
+                        <a href={item.url} target='_blank' className="cursor-pointer ">
                           <img 
                             src={item.iconUrl} 
                             width={30}
@@ -103,7 +148,7 @@ const Projects = () => {
                             alt={item.title}
                           />
                         </a>
-                        <a href={item.url2} target='_blank' className='flex items-center ml-auto' >
+                        <a href={item.url2} target='_blank' className='flex items-center ml-auto'>
                           <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">Explore</p>
                           <Arrow/>
                         </a>
@@ -115,6 +160,17 @@ const Projects = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <motion.img
+              src={img.src}
+              alt={img.alt}
+              className="absolute w-[25%] rounded-lg object-cover object-center pointer-events-none transition-opacity duration-200 ease-in-out"
+              style={{
+                top: imagePos.y,
+                left: imagePos.x,
+                opacity: img.opacity,
+                transform: 'translate(-30%, -80%)',
+              }}
+            />
           </div>
         </div>
       </div>

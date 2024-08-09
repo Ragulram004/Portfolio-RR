@@ -46,6 +46,11 @@ import frontend from "./frontend.svg";
 import uiux from "./uiux.svg";
 import mern from "./mern.svg";
 
+import invoice from './Invoice.png'
+import progresspulse from './progresspulse.png'
+import rolex from './Rolex.png'
+import school from './school.png'
+
 export {
   mongo,
   express,
@@ -85,4 +90,9 @@ export {
   twitter,
   github,
   linkedin,
+
+  invoice,
+  progresspulse,
+  rolex,
+  school,
 };
