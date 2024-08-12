@@ -86,7 +86,7 @@ const Projects = () => {
     >
       <div ref={ref}>
         <motion.div variants={textVariant()} initial="hidden" animate={isInView ? "show" : "hidden"}>
-          <div className="relative z-10 lg:mt-20 xl:mt-20 mb-20 lg:mb-0 xl:mb-0 lg:block">
+          <div className="relative  lg:mt-20 xl:mt-20 mb-20 lg:mb-0 xl:mb-0 lg:block ">
             <h5 className="tagline mb-6 text-center text-n-1/50">
               PROJECT GALLERY
             </h5>
@@ -163,12 +163,13 @@ const Projects = () => {
             <motion.img
               src={img.src}
               alt={img.alt}
-              className="absolute w-[25%] rounded-lg object-cover object-center pointer-events-none transition-opacity duration-200 ease-in-out"
+              className="hidden lg:block absolute w-[25%] rounded-lg object-cover object-center pointer-events-none transition-opacity duration-200 ease-in-out"
               style={{
                 top: imagePos.y,
                 left: imagePos.x,
                 opacity: img.opacity,
-                transform: 'translate(-30%, -80%)',
+                transform: 'translate(-30%, -110%)',
+                zIndex:1,
               }}
             />
           </div>

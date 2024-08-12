@@ -116,7 +116,7 @@ const Contact = () => {
                 name='name'
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your good name?"
+                placeholder="What's your name?"
                 className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-2 font-medium'
               />
             </label>
@@ -128,7 +128,7 @@ const Contact = () => {
                 name='email'
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your web address?"
+                placeholder="What's your email-id?"
                 className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-2 font-medium'
               />
             </label>
@@ -140,7 +140,7 @@ const Contact = () => {
                 name='message'
                 value={form.message}
                 onChange={handleChange}
-                placeholder='What you want to say?'
+                placeholder="What's your message to me?"
                 className='bg-transparent py-4 px-6 placeholder:text-n-4 body-2  outline-none border-b-2 rounded-sm focus:border-color-2 font-medium'
               />
             </label>
@@ -178,6 +178,7 @@ const Contact = () => {
             ))}
           </ul>
         </motion.div>
+        
         <motion.div
           className="relative z-10 md:mt-20 lg:mt-20 xl:mt-20 lg:block"
           variants={textVariant()}
@@ -185,7 +186,7 @@ const Contact = () => {
           animate={isInView ? "show" : "hidden"}
         >
           <h5 className="mb-6 text-center text-n-1/50">
-            Copyright &copy; {new Date().getFullYear()}
+            RAGULRAM &copy; {new Date().getFullYear()}
           </h5>
         </motion.div>
       </div>

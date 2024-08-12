@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon, isInView }) => {
   return (
     <motion.div
-      className="sm:w-[200px] mt-10 w-full"
+      className="sm:w-[200px] mt-10 w-[80%] mx-auto md:mx-0 lg:mx-0 xl:mx-0"
       variants={fadeIn("right", "spring", index * 0.2, 0.75)}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}

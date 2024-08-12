@@ -16,8 +16,8 @@ const App = () => {
         <Header/>
         <Hero/>
         <About/>
-        <Projects/>
         <Skills/>
+        <Projects/>
         <div className="relative z-0">
           <Contact/> 
           <Bgcanva/>

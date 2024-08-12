@@ -18,6 +18,15 @@ import {
   javascriptlogo,
   figmalogo,
   csslogo,
+  clogo,
+  javalogo,
+  pythonlogo,
+  muilogo,
+  numpylogo,
+  pandaslogo,
+  postmanlogo,
+  reactrouterlogo,
+  streamlitlogo,
 
   instagram,
   github,
@@ -77,12 +86,77 @@ export const collabContent = [
   
 ];
 
+export const collabAppsBasic = [
+  {
+    id: "0",
+    title: "C",
+    icon: clogo,
+    width: 25,
+    height: 36,
+  },
+  {
+    id: "1",
+    title: "Java",
+    icon: javalogo,
+    width: 24,
+    height: 36,
+  },
+  {
+    id: "2",
+    title: "Python",
+    icon: pythonlogo,
+    width: 26,
+    height: 28,
+  },
+  {
+    id: "3",
+    title: "Stream-lit",
+    icon: streamlitlogo,
+    width: 30,
+    height: 35,
+  },
+  {
+    id: "4",
+    title: "Pandas",
+    icon: pandaslogo,
+    width: 18,
+    height: 34,
+  },
+  {
+    id: "5",
+    title: "Numpy",
+    icon: numpylogo,
+    width: 30,
+    height: 34,
+  },
+  {
+    id: "6",
+    title: "Mui",
+    icon: muilogo,
+    width: 28,
+    height: 34,
+  },
+  {
+    id: "7",
+    title: "Postman",
+    icon: postmanlogo,
+    width: 30,
+    height: 32,
+  },
+  {
+    id:"8",
+    title :"Figma",
+    icon: figmalogo,
+    width: 17,
+    height: 34,
+  },
+];
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figmalogo,
-    width: 20,
+    title: "React-Router",
+    icon: reactrouterlogo,
+    width: 30,
     height: 36,
   },
   {

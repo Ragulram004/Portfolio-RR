@@ -27,6 +27,15 @@ import tailwindlogo from "./collaboration/tailwind.png";
 import javascriptlogo from "./collaboration/javascript.png";
 import figmalogo from "./collaboration/figma.png";
 import csslogo from "./collaboration/css.png";
+import clogo from "./collaboration/c.svg"
+import javalogo from "./collaboration/java.svg"
+import muilogo from "./collaboration/mui.svg"
+import numpylogo from "./collaboration/numpy.svg"
+import pandaslogo from "./collaboration/pandas.svg"
+import postmanlogo from "./collaboration/postman.svg"
+import pythonlogo from "./collaboration/python.svg"
+import reactrouterlogo from "./collaboration/react-router.svg"
+import streamlitlogo from "./collaboration/streamlit.svg"
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -71,6 +80,15 @@ export {
   javascriptlogo,
   figmalogo,
   csslogo,
+  clogo,
+  javalogo,
+  pythonlogo,
+  muilogo,
+  numpylogo,
+  pandaslogo,
+  postmanlogo,
+  reactrouterlogo,
+  streamlitlogo,
 
   rrlogo,
   check,
