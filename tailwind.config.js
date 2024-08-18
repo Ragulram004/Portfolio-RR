@@ -30,7 +30,7 @@ export default {
           5: "#3F3A52",
           6: "#252134",
           7: "#15131D",
-          8: "#0E0C15",
+          8: "#010100",
           9: "#474060",
           10: "#43435C",
           11: "#1B1B2E",
@@ -39,7 +39,7 @@ export default {
         },
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e45",
+        card: "0px 35px 120px -15px #211e25",
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],

@@ -11,8 +11,8 @@ import node from "./N.svg"
 
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import ram from "./hero/ramb&w3.png";
+import heroBackground from "./hero/hero-background.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -94,7 +94,7 @@ export {
   check,
   background,
   curve,
-  robot,
+  ram,
   heroBackground,
   curve1,
   curve2,
