@@ -14,7 +14,6 @@ import 'swiper/css/free-mode';
 import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
 import { motion, useSpring } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import card from '../assets/benefits/card-1.svg'
 
 const Projects = () => {
 
@@ -128,19 +127,18 @@ const Projects = () => {
                     variants={fadeIn("up", "spring", index * 0.2, 0.75)}
                     initial="hidden"
                     animate={isInView ? "show" : "hidden"}
-                    className="flex flex-col mb-15 group relative shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[27px] rounded-tr-[55px] xl:rounded-tr-[70px] mr-2"
+                    className="flex flex-col mb-15 group relative shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[27px] rounded-tr-[55px] xl:rounded-tr-[70px] mr-2 "
                     style={{
                       backgroundImage: `url(${item.backgroundUrl})`,
-                      backgroundSize: 'contain', // Or 'contain' depending on your needs
-                      backgroundRepeat: 'no-repeat',
-                      backgroundPosition: 'center',
-                      // backdropFilter: 'blur(3px)'
+                      backdropFilter: 'blur(3px)',
+                      zIndex: 1000,
+                      display: 'block'
                     }}
                     onMouseEnter={() => handleMouseEnter(item)}
                     onMouseLeave={handleMouseLeave}
                     onMouseMove={handleMove}
                   >
-                    <div className="relative  flex flex-col min-h-[22rem] p-[2.4rem]">
+                    <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem]">
                       <h5 className="h5 mb-5">{item.title}</h5>
                       <p className="body-2 mb-6 text-n-3">{item.text}</p>
                       <div className="flex items-center mt-auto">
