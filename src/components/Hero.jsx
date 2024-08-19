@@ -42,7 +42,7 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <Button white  href={"#"}>
+          <Button white onClick={() => window.open("Resume.pdf", "_blank")} >
             Resume
           </Button>
           <ScrollParallax>
