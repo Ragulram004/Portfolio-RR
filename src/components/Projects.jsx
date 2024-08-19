@@ -14,6 +14,7 @@ import 'swiper/css/free-mode';
 import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
 import { motion, useSpring } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import card from '../assets/benefits/card-1.svg'
 
 const Projects = () => {
 
@@ -129,7 +130,7 @@ const Projects = () => {
                     animate={isInView ? "show" : "hidden"}
                     className="flex flex-col mb-15 group relative shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[27px] rounded-tr-[55px] xl:rounded-tr-[70px] mr-2"
                     style={{
-                      backgroundImage: `url(${item.backgroundUrl})`,
+                      backgroundImage: `url(${card})`,
                       backdropFilter: 'blur(3px)'
                     }}
                     onMouseEnter={() => handleMouseEnter(item)}
