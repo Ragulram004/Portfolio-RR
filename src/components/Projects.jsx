@@ -127,14 +127,16 @@ const Projects = () => {
                     variants={fadeIn("up", "spring", index * 0.2, 0.75)}
                     initial="hidden"
                     animate={isInView ? "show" : "hidden"}
-                    className="flex flex-col mb-15 group  relative  bg-no-repeat  md:max-w-[24rem] shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[35px] rounded-br-[65px] xl:rounded-br-[70px] mr-2 backdrop-blur-[3px] border border-n-1"
+                    className="flex flex-col mb-15 group  relative  bg-no-repeat  md:max-w-[24rem] shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[35px] rounded-tr-[65px] xl:rounded-tr-[70px] mr-2 backdrop-blur-[3px]"
 
                     onMouseEnter={() => handleMouseEnter(item)}
                     onMouseLeave={handleMouseLeave}
                     onMouseMove={handleMove}
                   >
                     <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem]  bg-[length:100%_100%] "
-                     
+                     style={{
+                      backgroundImage: `url(${item.backgroundUrl})`,
+                    }}
                     >
                       <h5 className="h5 mb-5">{item.title}</h5>
                       <p className="body-2 mb-6 text-n-3">{item.text}</p>
