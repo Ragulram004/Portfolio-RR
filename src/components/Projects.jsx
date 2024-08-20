@@ -127,12 +127,9 @@ const Projects = () => {
                     variants={fadeIn("up", "spring", index * 0.2, 0.75)}
                     initial="hidden"
                     animate={isInView ? "show" : "hidden"}
-                    className="flex flex-col mb-15 group relative shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[27px] rounded-tr-[55px] xl:rounded-tr-[70px] mr-2 "
+                    className="flex flex-col mb-15 group  relative  bg-no-repeat  md:max-w-[24rem] shadow-lg xl:w-[22rem] p-0.5 bg-[length:100%_100%] xl:rounded-tl-[30px] rounded-tl-[27px] rounded-tr-[55px] xl:rounded-tr-[70px] mr-2 "
                     style={{
                       backgroundImage: `url(${item.backgroundUrl})`,
-                      backdropFilter: 'blur(3px)',
-                      zIndex: 1000,
-                      display: 'block'
                     }}
                     onMouseEnter={() => handleMouseEnter(item)}
                     onMouseLeave={handleMouseLeave}
