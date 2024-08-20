@@ -14,6 +14,7 @@ import 'swiper/css/free-mode';
 import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
 import { motion, useSpring } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import projectcard from '../../public/card-1.svg'
 
 const Projects = () => {
 
@@ -135,7 +136,7 @@ const Projects = () => {
                   >
                     <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem]  bg-[length:100%_100%] "
                      style={{
-                      backgroundImage: `url(${item.backgroundUrl})`,
+                      backgroundImage: `url(${projectcard})`,
                     }}
                     >
                       <h5 className="h5 mb-5">{item.title}</h5>

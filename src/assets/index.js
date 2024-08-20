@@ -37,12 +37,12 @@ import pythonlogo from "./collaboration/python.svg"
 import reactrouterlogo from "./collaboration/react-router.svg"
 import streamlitlogo from "./collaboration/streamlit.svg"
 
-import benefitCard1 from "./benefits/card-1.svg";
-import benefitCard2 from "./benefits/card-2.svg";
-import benefitCard3 from "./benefits/card-3.svg";
-import benefitCard4 from "./benefits/card-4.svg";
-import benefitCard5 from "./benefits/card-5.svg";
-import benefitCard6 from "./benefits/card-6.svg";
+import benefitCard1 from "../../public/card-1.svg"; 
+import benefitCard2 from "../../public/card-2.svg";
+import benefitCard3 from "../../public/card-3.svg";
+import benefitCard4 from "../../public/card-4.svg";
+import benefitCard5 from "../../public/card-5.svg";
+import benefitCard6 from "../../public/card-6.svg";
 
 
 import instagram from "./socials/instagram.svg";
