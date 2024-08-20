@@ -106,7 +106,7 @@ const Contact = () => {
             autoComplete="off"
             ref={formRef}
             onSubmit={handleSubmit}
-            className='flex flex-col gap-5 rounded-sm border-2 border-white p-5'
+            className='flex flex-col gap-5 rounded-sm border-2 border-n-4 p-5'
           >
             <label className='flex flex-col'>
               <span className='body-2 mb-2'>Name</span>
