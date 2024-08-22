@@ -107,7 +107,7 @@ const Hero = () => {
           <div className="absolute -top-[54%] left-1/2 w-[235%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
-              className="w-[85%]  mx-auto hidden md:block  md:scale-[1] md:-translate-y-[5%] lg:scale-[1] lg:translate-y-[9%] "
+              className="w-[85%]  mx-auto hidden md:block  md:scale-[1] md:-translate-y-[5%] lg:scale-[1] lg:translate-y-[9%]  blur-[2px] "
               width={1440}
               height={1800}
               alt="hero"
