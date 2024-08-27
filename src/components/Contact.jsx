@@ -5,6 +5,7 @@ import { slideIn, fadeIn ,textVariant } from "../utils/motion";
 import Section from "./Section";
 import Heading from "./Heading";
 import { socials } from "../constants";
+import {toast } from 'react-toastify';
 
 const Contact = () => {
   const formRef = useRef();
@@ -54,7 +55,9 @@ const Contact = () => {
     )
       .then(() => {
         setLoading(false);
-        alert('Thanks for your time. I’ll catch up with you soon.');
+        toast.success('Thanks for your time. I’ll catch up with you soon.',{
+          autoClose: 4000
+        });
         setForm({
           name: '',
           email: '',
@@ -63,7 +66,9 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        alert('Oops, something didn’t work as expected.');
+        toast.error('Oops, something didn’t work as expected.',{
+          autoClose: 4000
+        });
       });
   };
 
