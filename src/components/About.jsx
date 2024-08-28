@@ -73,7 +73,7 @@ const About = () => {
           >
             <div className="relative z-2 px-7 pt-7 backdrop-blur-[2px] xl:backdrop-blur-[3px]">
               <p className="body-1 text-n-2">
-              Hello! I'm a web developer with a strong foundation in JavaScript and extensive expertise in popular frameworks like Node.js, React, and Express. 
+              Hello! I'm a web developer with a good grasp of JavaScript and hands-on experience in popular frameworks like Node.js, React, and Express.
               <br/> <br />
               My technical skills are complemented by a keen eye for design, thanks to my proficiency in Figma, which allows me to craft intuitive and visually appealing user interfaces.
                 <br /><br />
