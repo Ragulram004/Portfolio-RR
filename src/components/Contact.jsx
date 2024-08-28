@@ -66,7 +66,7 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        toast.error('Oops, something didn’t work as expected.',{
+        toast.error('Oops, something went wrong. Please reach out on LinkedIn.',{
           autoClose: 4000
         });
       });
