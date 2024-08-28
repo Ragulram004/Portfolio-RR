@@ -35,7 +35,7 @@ const Hero = () => {
               RAGULRAM{" "}
               <img
                 src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
+                className="absolute top-full left-0 w-full xl:-mt-2 rounded-sm h-[6px]"
                 width={624}
                 height={28}
                 alt="Curve"
