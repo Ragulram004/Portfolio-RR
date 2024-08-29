@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, icon, isInView }) => {
     >
       <div className="w-full p-[1px] rounded-[20px] shadow-card">
         <div className="rounded-[20px] py-5 px-12 min-h-[240px] flex justify-center items-center flex-col gap-4">
-          <img className="w-16 h-16 object-contain" src={icon} alt="" />
+          <img className="w-16 h-16 object-contain text-[#00D8FF] " src={icon} alt="" />
           <h3 className="text-n-2 text-[17px] font-bold text-center">{title}</h3>
         </div>
       </div>
