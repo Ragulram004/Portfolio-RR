@@ -68,9 +68,9 @@ export const heroIcons = [mongo, express,react, node,];
 
 
 export const collabText =
-  " As a frontend developer, I’m grateful for the opportunity to directly enhance user experiences through my work.";
+  "As a frontend developer, I’m passionate about crafting intuitive and engaging user interfaces that enhance the overall experience.";
 export const collabText2 =
-  " I'm grateful for the chance to create the solid infrastructure that ensures smooth and efficient user interactions.";
+  "As a backend developer, I’m dedicated to building robust and scalable infrastructures that power seamless and efficient user interactions.";
 
 export const collabContent = [
   {
