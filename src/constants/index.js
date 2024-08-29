@@ -249,8 +249,8 @@ export const benefits = [
     title: "Dayscholar Recognition",
     text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
     iconUrl: github,
-    // url: "https://github.com",
-    // url2: "https://github.com",
+    url: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
+    url2: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
 
   },
   {
@@ -279,8 +279,8 @@ export const benefits = [
     title: "Infra Audits",
     text: "Infra Audits, a dynamic system that facilitates interaction between auditors, handymen, and admins to manage and maintain infrastructure, utilizing #React #CSS #MongoDB #Express.js.",    iconUrl: github,
     light: true,
-    // url: "https://github.com",
-    // url2: "https://github.com",
+    url: "https://github.com/Ragulram004/Infra_Management_System.git",
+    url2: "https://github.com/Ragulram004/Infra_Management_System.git",
 
   },
 ];
