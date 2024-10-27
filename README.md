@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository showcases the projects and skills I've 
 
 ## 🖥️ Live Demo
 
-Check out the live version of my portfolio [here](https://ragulram.vercel.app/).
+Check out the live version of my portfolio [live](https://ragulram.vercel.app/).
 
 ## 🚀 Features
 
@@ -23,3 +23,4 @@ Check out the live version of my portfolio [here](https://ragulram.vercel.app/).
 - **Tools:**
   - Figma (for design)
   - Photoshop (for image editing)
+---
