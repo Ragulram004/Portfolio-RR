@@ -54,6 +54,8 @@ import invoice from './Invoice.png'
 import progresspulse from './progresspulse.png'
 import rolex from './Rolex.png'
 import school from './school.png'
+import InfraAudits from './Infra-dash.png'
+
 
 export {
   mongo,
@@ -103,4 +105,5 @@ export {
   progresspulse,
   rolex,
   school,
+  InfraAudits,
 };

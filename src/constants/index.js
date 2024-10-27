@@ -37,6 +37,7 @@ import {
   progresspulse,
   rolex,
   school,
+  InfraAudits,
 
 } from "../assets";
 
@@ -246,22 +247,21 @@ export const benefits = [
   },
   {
     id: "2",
+    title: "Infra Audits",
+    text: "Infra Audits, a dynamic system that facilitates interaction between auditors, handymen, and admins to manage and maintain infrastructure, utilizing #React #CSS #MongoDB #Express.js.",    iconUrl: github,
+    light: true,
+    img:InfraAudits,
+    url: "https://github.com/Ragulram004/Infra_Management_System.git",
+    url2: "https://github.com/Ragulram004/Infra_Management_System.git",
+
+  },
+  {
+    id: "3",
     title: "Dayscholar Recognition",
     text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
     iconUrl: github,
     url: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
     url2: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
-
-  },
-  {
-    id: "3",
-    title: "Invoice Portal",
-    text: "A communication system between faculty and students for project reviews, feedback and allocations. This project was built using #React #CSS  #MongoDB #Express.",
-    iconUrl: github,
-    light: true,
-    img: invoice,
-    url: "https://github.com/Ragulram004/invoice_portal.git",
-    url2: "https://invoice-portal-frontend.vercel.app",
 
   },
   {
@@ -272,15 +272,17 @@ export const benefits = [
     img: progresspulse,
     url: "https://github.com/Ragulram004/Progress_Pulse.git",
     url2: "https://github.com/Ragulram004/Progress_Pulse.git",
-
+    
   },
   {
     id: "5",
-    title: "Infra Audits",
-    text: "Infra Audits, a dynamic system that facilitates interaction between auditors, handymen, and admins to manage and maintain infrastructure, utilizing #React #CSS #MongoDB #Express.js.",    iconUrl: github,
+    title: "Invoice Portal",
+    text: "A communication system between faculty and students for project reviews, feedback and allocations. This project was built using #React #CSS  #MongoDB #Express.",
+    iconUrl: github,
     light: true,
-    url: "https://github.com/Ragulram004/Infra_Management_System.git",
-    url2: "https://github.com/Ragulram004/Infra_Management_System.git",
+    img: invoice,
+    url: "https://github.com/Ragulram004/invoice_portal.git",
+    url2: "https://invoice-portal-frontend.vercel.app",
 
   },
 ];

@@ -61,12 +61,12 @@ const About = () => {
         </motion.div>
         <div className="container relative z-2">
           <motion.div variants={textVariant()} initial="hidden" animate={isInView ? "show" : "hidden"}>
-            <Heading className="absolute mad:max-x-md lg:max-w-2xl" title="ABOUT" />
+            <Heading className="absolute mad:max-x-md lg:max-w-2xl z" title="ABOUT" />
           </motion.div>
         </div>
         <div className="xl:flex gap-[5rem] max-w-[70rem] mx-auto p-0">
           <motion.div
-            className="md:max-w-[39rem] lg:max-w-[50rem] xl:max-w-[35rem] mt-[3.2rem] xl:mt-[2rem] md:ml-[4.5rem] lg:ml-[6.5rem] xl:-ml-[1rem] pb-7 rounded-sm  border-2 border-n-4"
+            className="md:max-w-[39rem] lg:max-w-[50rem] xl:max-w-[35rem] mt-[3.2rem] xl:mt-[2rem] md:ml-[4.5rem] lg:ml-[6.5rem] xl:-ml-[1rem] pb-7 rounded-sm  border-2 border-n-4 z-4"
             variants={fadeIn("up", "spring", 0.3, 0.75)}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
