@@ -271,7 +271,7 @@ export const benefits = [
     iconUrl: github,
     img: progresspulse,
     url: "https://github.com/Ragulram004/Progress_Pulse.git",
-    url2: "https://github.com/Ragulram004/Progress_Pulse.git",
+    url2: "https://progress-pulse.vercel.app/",
     
   },
   {
