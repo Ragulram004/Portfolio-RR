@@ -19,8 +19,4 @@ Check out the live version of my portfolio [live](https://ragulram.vercel.app/).
   - Tailwind CSS
   - JavaScript
   - Photoshop
-
-- **Tools:**
-  - Figma (for design)
-  - Photoshop (for image editing)
 ---
