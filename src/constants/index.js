@@ -245,7 +245,7 @@ export const benefits = [
   {
     id: "1",
     title: "Rolex Landingpage",
-    text: "A Rolex landing page using #React and #Tailwind CSS. This project showcased my ability to develop sleek and responsive web pages with modern design aesthetics.",
+    text: "A luxurious Rolex landing page built using #React and #Tailwind CSS. This project beautifully showcased my ability to develop sleek, interactive, and responsive web pages with modern design aesthetics.",
     iconUrl: github,
     img:rolex,
     url: "https://github.com/Ragulram004/Rolex_Landingpage_Tailwindcss.git",
