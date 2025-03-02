@@ -7,6 +7,7 @@ import {
   frontend,
   uiux,
   mern,
+  api,
 
   expresslogo,
   gitlogo,
@@ -27,6 +28,9 @@ import {
   postmanlogo,
   reactrouterlogo,
   streamlitlogo,
+  chakra,
+  cloudinary,
+  recoil,
 
   instagram,
   github,
@@ -38,6 +42,7 @@ import {
   rolex,
   school,
   InfraAudits,
+  hive,
 
 } from "../assets";
 
@@ -111,23 +116,23 @@ export const collabAppsBasic = [
   },
   {
     id: "3",
-    title: "Stream-lit",
-    icon: streamlitlogo,
-    width: 30,
+    title: "Cloudinary",
+    icon: cloudinary,
+    width: 32,
     height: 35,
   },
   {
     id: "4",
-    title: "Pandas",
-    icon: pandaslogo,
-    width: 18,
+    title: "Chakra",
+    icon: chakra,
+    width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Numpy",
-    icon: numpylogo,
-    width: 30,
+    title: "Recoil",
+    icon: recoil,
+    width: 18,
     height: 34,
   },
   {
@@ -228,12 +233,12 @@ export const collabApps = [
 export const benefits = [
   {
     id: "0",
-    title: "School Website",
-    text: "A robust school website, significantly enhancing its overall functionality and providing an improved user experience.  #HTML #Bootstrap",
+    title: "Hive - A Social Media",
+    text: "A modern, engaging platform with personalized feeds, real-time chat, seamless content sharing, community spaces, and a responsive UI. Includes an account freeze option. #MERN #Cloudinary #Chakra UI",
     iconUrl: github,
-    img : school,
-    url: "https://github.com/Ragulram004/School_Website.git",
-    url2: "https://ragulram004.github.io/School_Website/index.html",
+    img : hive,
+    url: "https://github.com/Ragulram004/Hive-A_Social_Media.git",
+    url2: "https://hive-mt2l.onrender.com/",
   },
   {
     id: "1",
@@ -253,16 +258,16 @@ export const benefits = [
     img:InfraAudits,
     url: "https://github.com/Ragulram004/Infra_Management_System.git",
     url2: "https://github.com/Ragulram004/Infra_Management_System.git",
-
+    
   },
   {
     id: "3",
-    title: "Dayscholar Recognition",
-    text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
+    title: "School Website",
+    text: "A robust school website, significantly enhancing its overall functionality and providing an improved user experience.  #HTML #Bootstrap",
     iconUrl: github,
-    url: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
-    url2: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
-
+    img : school,
+    url: "https://github.com/Ragulram004/School_Website.git",
+    url2: "https://ragulram004.github.io/School_Website/index.html",
   },
   {
     id: "4",
@@ -283,6 +288,15 @@ export const benefits = [
     img: invoice,
     url: "https://github.com/Ragulram004/invoice_portal.git",
     url2: "https://invoice-portal-frontend.vercel.app",
+    
+  },
+  {
+    id: "6",
+    title: "Dayscholar Recognition",
+    text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
+    iconUrl: github,
+    url: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
+    url2: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
 
   },
 ];
@@ -329,7 +343,7 @@ export const services = [
     icon: backend,
   },
   {
-    title: "UI/UX Designer",
-    icon: uiux,
+    title: "Restful API Developer",
+    icon: api,
   },
 ];

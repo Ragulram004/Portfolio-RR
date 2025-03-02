@@ -36,6 +36,9 @@ import postmanlogo from "./collaboration/postman.svg"
 import pythonlogo from "./collaboration/python.svg"
 import reactrouterlogo from "./collaboration/react-router.svg"
 import streamlitlogo from "./collaboration/streamlit.svg"
+import chakra from "./collaboration/chakra.svg"
+import cloudinary from "./collaboration/cloudinary.svg"
+import recoil from "./collaboration/recoil.svg"
 
 
 
@@ -49,12 +52,14 @@ import backend from "./backend.svg";
 import frontend from "./frontend.svg";
 import uiux from "./uiux.svg";
 import mern from "./mern.svg";
+import api from "./api.svg";
 
 import invoice from './Invoice.png'
 import progresspulse from './progresspulse.png'
 import rolex from './Rolex.png'
 import school from './school.png'
 import InfraAudits from './Infra-dash.png'
+import hive from './hive.png'
 
 
 export {
@@ -66,6 +71,7 @@ export {
   frontend,
   uiux,
   mern,
+  api,
 
   expresslogo,
   gitlogo,
@@ -86,6 +92,9 @@ export {
   postmanlogo,
   reactrouterlogo,
   streamlitlogo,
+  chakra,
+  cloudinary,
+  recoil,
 
   rrlogo,
   check,
@@ -106,4 +115,5 @@ export {
   rolex,
   school,
   InfraAudits,
+  hive,
 };
