@@ -136,7 +136,7 @@ const Projects = () => {
                     <div className="relative z-10 flex flex-col min-h-[22rem] p-[2.4rem]  bg-[length:100%_100%] "
                      
                     >
-                      {/* <img className='rounded-lg mb-1' src={item.img} alt="" /> */}
+                      <img className='rounded-lg mb-1 lg:hidden border-[2px] border-n-4' src={item.img} alt="" />
                       <h5 className="h5 mb-5">{item.title}</h5>
                       <p className="body-2 mb-6 text-n-3">{item.text}</p>
                       <div className="flex items-center mt-auto">

@@ -60,6 +60,7 @@ import rolex from './Rolex.png'
 import school from './school.png'
 import InfraAudits from './Infra-dash.png'
 import hive from './hive.png'
+import intelligate from './intelligate.png'
 
 
 export {
@@ -116,4 +117,5 @@ export {
   school,
   InfraAudits,
   hive,
+  intelligate,
 };

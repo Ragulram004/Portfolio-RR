@@ -43,6 +43,7 @@ import {
   school,
   InfraAudits,
   hive,
+  intelligate,
 
 } from "../assets";
 
@@ -234,7 +235,7 @@ export const benefits = [
   {
     id: "0",
     title: "Hive - A Social Media",
-    text: "A modern, engaging platform with personalized feeds, real-time chat, seamless content sharing, community spaces, and a responsive UI. Includes an account freeze option. #MERN #Cloudinary #Chakra UI",
+    text: "Engaging platform with personalized feeds, real-time chat, seamless content sharing, community spaces, and a responsive UI. Includes an account freeze option. #MERN #Cloudinary #Chakra UI",
     iconUrl: github,
     img : hive,
     light:true,
@@ -263,7 +264,7 @@ export const benefits = [
   {
     id: "3",
     title: "School Website",
-    text: "A robust school website, significantly enhancing its overall functionality and providing an improved user experience.  #HTML #Bootstrap",
+    text: "A robust school website landing page, significantly enhancing its overall functionality and providing an improved user experience by efficiently presenting school details.  #HTML #Bootstrap",
     iconUrl: github,
     img : school,
     url: "https://github.com/Ragulram004/School_Website.git",
@@ -283,7 +284,7 @@ export const benefits = [
   {
     id: "5",
     title: "Invoice Portal",
-    text: "A communication system between faculty and students for project reviews, feedback and allocations. This project was built using #React #CSS  #MongoDB #Express.",
+    text: "A communication system between faculty and students for seamless project reviews, detailed feedback, and efficient project allocations. This project was built using #React #CSS  #MongoDB #Express.",
     iconUrl: github,
     img: invoice,
     url: "https://github.com/Ragulram004/invoice_portal.git",
@@ -292,9 +293,10 @@ export const benefits = [
   },
   {
     id: "6",
-    title: "Dayscholar Recognition",
-    text: "Detect day scholars inside a hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit to accurately identify and monitor individuals.",
+    title: "Intelligate",
+    text: "Intelligate is a smart day-scholar recognition system designed to efficiently manage access and prevent illegal entry inside the hostel. This project utilized #Python, #opencv, #dlib, and #Streamlit",
     iconUrl: github,
+    img:intelligate,
     light:true,
     url: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
     url2: "https://github.com/Ragulram004/Intelligate_Dayscholar_Recognition_System.git",
