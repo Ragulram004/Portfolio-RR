@@ -46,7 +46,7 @@ const Hero = () => {
           View CV
           </Button>
           <ScrollParallax>
-            <ul className=" lg:hidden flex justify-center items-center mt-15  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl ">
+            <ul className=" lg:hidden flex justify-center items-center mt-15  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-full ">
               {socials.map(({ iconUrl, id, title, url }) => (
                 <li className="p-5" key={id}>
                   <a href={url} target="_blank" className="cursor-pointer">
