@@ -75,9 +75,9 @@ const About = () => {
               <p className="body-1 text-n-2">
               Hello! I'm a web developer with a good grasp of JavaScript and hands-on experience in popular frameworks like Node.js, React, and Express.
               <br/> <br />
-              My technical skills are complemented by a keen eye for design, thanks to my proficiency in Figma, which allows me to craft intuitive and visually appealing user interfaces.
+              My technical skills are complemented by a keen eye for design, thanks to my proficiency in creativity, which allows me to craft intuitive and visually appealing user interfaces.
                 <br /><br />
-                As a quick learner, I am always eager to embrace new challenges and technologies.  I am always on the lookout for opportunities to expand my knowledge and stay updated with the latest industry trends.
+                As a good learner, I am always eager to embrace new challenges and technologies.  I am always on the lookout for opportunities to expand my knowledge and stay updated with the latest industry trends.
               </p>
             </div>
           </motion.div>

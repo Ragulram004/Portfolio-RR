@@ -43,7 +43,7 @@ const Hero = () => {
             </span>
           </h1>
           <Button white onClick={() => window.open("Resume.pdf", "_blank")} >
-            Resume
+          View CV
           </Button>
           <ScrollParallax>
             <ul className=" lg:hidden flex justify-center items-center mt-15  max-w-[17.5rem] mx-auto   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl ">
@@ -72,7 +72,7 @@ const Hero = () => {
                 />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[7.5rem] bottom-[8.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
+                  <ul className="hidden absolute -left-[7.5rem] bottom-[8.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-full lg:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={icon} />
@@ -81,7 +81,7 @@ const Hero = () => {
                   </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -right-[8rem] bottom-[13.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
+                  <ul className="hidden absolute -right-[8rem] bottom-[13.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-full lg:flex">
                     {socials.map(({ iconUrl, id, title, url }) => (
                       <li className="p-5" key={id}>
                         <a
@@ -94,6 +94,7 @@ const Hero = () => {
                             width={24}
                             height={25}
                             alt={title}
+                            className="hover:transform hover:scale-125 transition-all"
                           />
                         </a>
                       </li>

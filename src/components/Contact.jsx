@@ -159,12 +159,12 @@ const Contact = () => {
           </form>
         </motion.div>
         <motion.div
-          className="xl:absolute lg:absolute md:absolute bottom-[10rem] xl:left-2 lg:left-0 md:-left-3 z-1"
+          className="xl:absolute lg:absolute md:absolute bottom-[10rem] xl:left-2 lg:left-0 md:-left-3 z-1 w-100 "
           variants={slideIn('left', 'spring', 0.7, 1)}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
         >
-          <ul className="flex justify-center mt-[5rem] md:flex-col lg:flex-col xl:flex-col ">
+          <ul className="flex justify-center mt-5 md:flex-col lg:flex-col xl:flex-col  rounded-full  bg-n-9/40 backdrop-blur border border-n-1/10 ">
             {socials.map(({ iconUrl, id, title, url }) => (
               <li className="p-5" key={id}>
                 <a
@@ -177,6 +177,7 @@ const Contact = () => {
                     width={24}
                     height={25}
                     alt={title}
+                    className="hover:transform hover:scale-125 transition-all"
                   />
                 </a>
               </li>
@@ -190,7 +191,7 @@ const Contact = () => {
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
         >
-          <h5 className="mb-6 text-center text-n-1/50">
+          <h5 className="mb-6 mt-5 text-center text-n-1/50">
             RAGULRAM &copy; {new Date().getFullYear()}
           </h5>
         </motion.div>
