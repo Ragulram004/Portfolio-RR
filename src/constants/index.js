@@ -315,7 +315,7 @@ export const socials = [
     id: "1",
     title: "LinkedIn",
     iconUrl: linkedin,
-    url: "https://www.linkedin.com/in/ragulram-b-455387253/",
+    url: "https://www.linkedin.com/in/ragulram-balasaravanan/",
   },
   {
     id: "2",
