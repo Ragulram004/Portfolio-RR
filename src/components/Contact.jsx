@@ -43,34 +43,52 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_ux6pr78', 'template_lcdwsmq',
+    // 1️⃣ Send email to you (site owner)
+    emailjs.send(
+      "service_ux6pr78", 
+      "template_lcdwsmq",
       {
         from_name: form.name,
-        to_name: 'Ragulram',
         from_email: form.email,
-        to_email: 'ragulram0427@gmail.com',
-        message: form.message
+        message: form.message,
+        to_name: "Ragulram", 
+        to_email: "ragulram0427@gmail.com"
       },
-      'D7g4pcZUNWKlYKbr1'
+      "D7g4pcZUNWKlYKbr1"
     )
-      .then(() => {
-        setLoading(false);
-        toast.success('Thanks for your time. I’ll catch up with you soon.',{
-          autoClose: 4000
-        });
-        setForm({
-          name: '',
-          email: '',
-          message: ''
-        });
-      }, (error) => {
-        setLoading(false);
-        console.log(error);
-        toast.error('Oops, something went wrong. Please reach out on LinkedIn.',{
-          autoClose: 4000
-        });
+    .then(() => {
+      // 2️⃣ After success, send acknowledgement to the user
+      return emailjs.send(
+        "service_ux6pr78",
+        "template_8phnfm8",
+        {
+          to_name: form.name,
+          to_email: form.email,
+          from_name: "Ragulram",
+          from_email: "ragulram0427@gmail.com", 
+          // message: "Thanks for your time. I’ll catch up with you soon."
+        },
+        "D7g4pcZUNWKlYKbr1"
+      );
+    })
+    .then(() => {
+      // Success flow
+      setLoading(false);
+      toast.success("Thanks for your time. I’ll catch up with you soon.", {
+        autoClose: 4000
       });
+      setForm({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      // Error flow
+      setLoading(false);
+      console.error(error);
+      toast.error("Oops, something went wrong. Please reach out on LinkedIn.", {
+        autoClose: 4000
+      });
+    });
   };
+
 
   return (
     <Section
