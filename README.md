@@ -18,5 +18,5 @@ Check out the live version of my portfolio [live](https://ragulram.vercel.app/).
   - React
   - Tailwind CSS
   - JavaScript
-  - Photoshop
+  - Photoshop (Image in Home Section)
 ---
